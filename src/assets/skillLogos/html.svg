@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="100"
+   height="100"
+   viewBox="0 0 2.5 2.5"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="html.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <color-profile
+       name="sRGB-IEC61966-2.1"
+       xlink:href="../../../../../WINDOWS/system32/spool/drivers/color/sRGB%20Color%20Space%20Profile.icm"
+       id="color-profile2" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.7329677"
+     inkscape:cx="105.5629"
+     inkscape:cy="3.8419773"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1" />
+  <g
+     id="g1"
+     style="mix-blend-mode:normal;fill:#9ddd55;fill-opacity:1"
+     transform="translate(-6.9736609,-6.2601509)">
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke-width:0.0216008"
+       id="rect2"
+       width="2.5"
+       height="2.5"
+       x="6.9736609"
+       y="6.2601509" />
+    <path
+       d="M 7.4520008,8.2902893 V 8.0264003 H 7.1881119 v 0.263889 H 7.0561675 V 7.630567 H 7.1881119 V 7.8944559 H 7.4520008 V 7.630567 h 0.1319445 v 0.6597223 z m 0.3958334,0 V 7.7625114 H 7.6631119 V 7.630567 H 8.1513064 V 7.7625114 H 7.9797786 v 0.5277779 z m 0.3958333,0 V 7.630567 h 0.131944 l 0.184723,0.4486113 h 0.01319 L 8.7714415,7.630567 h 0.131944 v 0.6597223 h -0.13194 V 7.8812614 h -0.01319 l -0.145139,0.3298609 h -0.07917 l -0.14514,-0.3298609 h -0.01319 v 0.4090279 z m 1.1875,0 H 9.0353345 V 7.630567 h 0.131944 v 0.5277773 h 0.263889 z M 8.1645008,6.7333447 7.8610286,7.036817 8.1645008,7.3402892 8.0853342,7.4986225 7.6235286,7.036817 8.0853342,6.5750114 Z M 8.3228345,7.3402892 8.6263065,7.036817 8.3228345,6.7333447 8.4020045,6.5750114 8.8638105,7.036817 8.4020045,7.4986225 Z"
+       id="path1"
+       style="mix-blend-mode:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.131944" />
+  </g>
+</svg>

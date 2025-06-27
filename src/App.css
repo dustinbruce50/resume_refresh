@@ -1,0 +1,276 @@
+@font-face {
+  font-family: "Sora";
+  src: url("./fonts/sora/Sora-VariableFont_wght.ttf") format("truetype");
+  font-display: swap;
+}
+.react-pdf__Page {
+  @apply relative inline-block !important;
+  width: 10% !important;
+}
+
+.react-pdf__Page__textContent {
+  @apply absolute inset-0 !important;
+  color: white !important;
+  user-select: text;
+}
+
+.react-pdf__Page__annotations {
+  @apply absolute inset-0 !important;
+}
+@media only screen {
+  :root {
+    --mainwhite: #ffffff;
+    --mainblack: #000000;
+  }
+
+  #root {
+    font-family: "Sora";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 100%;
+    width: 100%;
+    min-height: 100vh;
+    min-width: 100vh;
+    height: 100%;
+    margin: 0 auto;
+    width: 100%;
+    background-color: var(--mainwhite);
+    color: var(--mainblack);
+  }
+  #carousel {
+    max-width: 100%;
+    max-height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-container {
+    width: 70%;
+    height: 70%;
+    padding-top: 50px;
+    align-self: center;
+
+    border-radius: 10px;
+    padding-bottom: 50px;
+  }
+  .slick-arrow {
+    margin-bottom: 10vh;
+  }
+  .home {
+    width: 100%;
+
+    justify-items: center;
+  }
+  .heading {
+    text-align: center;
+    margin: 1rem;
+    margin-top: 2rem;
+  }
+  .projectheading {
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .projectsubheading {
+    font-size: large;
+    text-align: center;
+    margin: 1rem;
+  }
+  .card {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+    border: 1px solid #000000;
+  }
+  .Nav {
+    margin: 1rem 50px;
+    border-radius: 10em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #000000;
+    background-color: var(--mainwhite);
+    width: 80%;
+    flex-wrap: wrap;
+  }
+  .Nav a {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: center;
+
+    margin: 0.5rem;
+    cursor: pointer;
+    gap: 100px;
+    font-weight: 500;
+  }
+
+  #about .gridcontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 20% 80%;
+  }
+  .item1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .item2 {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+  }
+  .item3 {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+  .credit {
+    display: block;
+    text-align: right;
+    padding-top: 1rem;
+    color: gray;
+    text-decoration: underline;
+    font-size: small;
+  }
+  .skillcontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+    grid-template-rows: auto auto auto auto;
+    height: auto;
+    gap: 1rem;
+    justify-items: center;
+    text-wrap: wrap;
+    column-gap: 0;
+  }
+  .skillbox {
+    border: 4px solid #000000;
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .skillbox img {
+    width: 60%;
+    height: 60%;
+    margin: 0;
+  }
+  .skillbox div {
+    font-weight: 900;
+    font-size: 80%;
+    margin-top: 0.5rem;
+  }
+  .skillbox.Buisness {
+    font-size: 75%;
+  }
+  #jobexp {
+    border: 1px solid #000000;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  #jobexp .company {
+    font-weight: 900;
+    font-size: 100%;
+  }
+  #jobexp .title {
+    font-weight: 900;
+    font-size: 90%;
+    margin-bottom: 0.5rem;
+  }
+  #jobexp .description {
+    font-size: 80%;
+    margin-bottom: 0.5rem;
+  }
+  #jobexp .learned {
+    font-weight: 900;
+    font-size: 80%;
+    margin-bottom: 0.5rem;
+  }
+  #pdfmodal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+  }
+  .pdfclose {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    color: black;
+    display: flex;
+  }
+  .pdfnav {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    display: flex;
+    gap: 0.5rem;
+  }
+  .pdfcontainer {
+    overflow: auto;
+    max-height: 75vh;
+    max-width: 90vh;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  }
+  #project-link {
+    background: black;
+    color: white;
+  }
+  .project-link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: large;
+  }
+  .project-link-container a {
+    text-decoration: none;
+    color: white;
+    font-size: 130%;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    background-color: black;
+    text-decoration: underline;
+  }
+  #datasciencehome img {
+    width: 50%;
+    height: 50%;
+  }
+}
