@@ -5,7 +5,7 @@ const TheLook = () => {
   const pdfFiles = [
     {
       id: 1,
-      file: "/src/assets/thelookpdfs/TheLook Data Analysis-1_cropped.pdf",
+      file: "/thelookpdfs/TheLook Data Analysis-1_cropped.pdf",
       analysis: (
         <>
           <div className="text-base space-y-8">
@@ -43,7 +43,7 @@ const TheLook = () => {
 
     {
       id: 2,
-      file: "/src/assets/thelookpdfs/TheLook Data Analysis-2.pdf",
+      file: "/thelookpdfs/TheLook Data Analysis-2.pdf",
       analysis: (
         <>
           <div className="text-base space-y-8">
@@ -75,7 +75,7 @@ const TheLook = () => {
     },
     {
       id: 3,
-      file: "/src/assets/thelookpdfs/TheLook Data Analysis-3.pdf",
+      file: "/thelookpdfs/TheLook Data Analysis-3.pdf",
       analysis: (
         <>
           <div className="text-base space-y-8">
@@ -91,7 +91,7 @@ const TheLook = () => {
     },
     {
       id: 4,
-      file: "/src/assets/thelookpdfs/TheLook Data Analysis-4.pdf",
+      file: "/thelookpdfs/TheLook Data Analysis-4.pdf",
       analysis: (
         <>
           <div className="text-base space-y-8">
@@ -129,7 +129,7 @@ const TheLook = () => {
     },
     {
       id: 5,
-      file: "/src/assets/thelookpdfs/TheLook Data Analysis-5.pdf",
+      file: "/thelookpdfs/TheLook Data Analysis-5.pdf",
       analysis: (
         <>
           <div className="text-base space-y-8">
@@ -157,7 +157,7 @@ const TheLook = () => {
     },
     {
       id: 6,
-      file: "/src/assets/thelookpdfs/TheLook Data Analysis-6.pdf",
+      file: "/thelookpdfs/TheLook Data Analysis-6.pdf",
       analysis: (
         <>
           <div className="text-base space-y-8">
@@ -178,7 +178,7 @@ const TheLook = () => {
     },
     {
       id: 7,
-      file: "/src/assets/thelookpdfs/TheLook Data Analysis-7.pdf",
+      file: "/thelookpdfs/TheLook Data Analysis-7.pdf",
       analysis: (
         <>
           <div className="text-base space-y-8">
@@ -203,7 +203,7 @@ const TheLook = () => {
     },
     {
       id: 8,
-      file: "/src/assets/thelookpdfs/TheLook Data Analysis-8.pdf",
+      file: "/thelookpdfs/TheLook Data Analysis-8.pdf",
       analysis: (
         <>
           <div className="text-base space-y-8">

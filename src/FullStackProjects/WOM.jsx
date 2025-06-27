@@ -1,18 +1,12 @@
 import React from "react";
 import Carousel from "../Home/Carousel.jsx";
-import NewWorkOrder from "../assets/WOM/NewWorkOrder.jpg";
-import register from "../assets/WOM/register.jpg";
-import UpdateWorkOrder from "../assets/WOM/UpdateWorkOrder.jpg";
-import workOrderTable from "../assets/WOM/workOrderTable.jpg";
-import login from "../assets/WOM/login.jpg";
+import NewWorkOrder from "/WOM/NewWorkOrder.jpg";
+import register from "/WOM/register.jpg";
+import UpdateWorkOrder from "/WOM/UpdateWorkOrder.jpg";
+import workOrderTable from "/WOM/workOrderTable.jpg";
+import login from "/WOM/login.jpg";
 
-const images = [
-    NewWorkOrder,
-    register,
-    UpdateWorkOrder,
-    workOrderTable,
-    login,
-]
+const images = [NewWorkOrder, register, UpdateWorkOrder, workOrderTable, login];
 
 const WOM = () => {
   return (

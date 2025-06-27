@@ -1,10 +1,10 @@
 import React from "react";
-import cart from "../assets/Taco/cart.jpeg";
-import full_height_menu from "../assets/Taco/full_height_menu.jpeg";
-import full_home from "../assets/Taco/full_home.jpeg";
-import full_width_menu from "../assets/Taco/full_width_menu.jpeg";
-import post_cart_checkout from "../assets/Taco/post_cart_checkout.jpeg";
-import stripe_checkout from "../assets/Taco/stripe_checkout.jpeg";
+import cart from "/Taco/cart.jpeg";
+import full_height_menu from "/Taco/full_height_menu.jpeg";
+import full_home from "/Taco/full_home.jpeg";
+import full_width_menu from "/Taco/full_width_menu.jpeg";
+import post_cart_checkout from "/Taco/post_cart_checkout.jpeg";
+import stripe_checkout from "/Taco/stripe_checkout.jpeg";
 import Carousel from "../Home/Carousel";
 
 const images = [

@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "../Home/Carousel";
-import chat from "../assets/Chat/chat.jpeg";
-import login_register from "../assets/Chat/login_register.png";
+import chat from "/Chat/chat.jpeg";
+import login_register from "/Chat/login_register.png";
 const images = [chat, login_register];
 
 const Chat = () => {

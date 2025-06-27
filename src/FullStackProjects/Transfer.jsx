@@ -1,14 +1,14 @@
 import React from "react";
 import Carousel from "../Home/Carousel";
-import driver_ready from "../assets/Transfers/driver_ready.png";
-import driver_recently from "../assets/Transfers/driver_recently.png";
-import homescreen from "../assets/Transfers/homescreen.png";
-import loginscreen from "../assets/Transfers/loginscreen.png";
-import operator_delivered from "../assets/Transfers/operator_delivered.png";
-import operator_open from "../assets/Transfers/operator_open.png";
-import operator_request from "../assets/Transfers/operator_request.png";
-import register from "../assets/Transfers/register.png";
-import successlogin from "../assets/Transfers/successlogin.png";
+import driver_ready from "/Transfers/driver_ready.png";
+import driver_recently from "/Transfers/driver_recently.png";
+import homescreen from "/Transfers/homescreen.png";
+import loginscreen from "/Transfers/loginscreen.png";
+import operator_delivered from "/Transfers/operator_delivered.png";
+import operator_open from "/Transfers/operator_open.png";
+import operator_request from "/Transfers/operator_request.png";
+import register from "/Transfers/register.png";
+import successlogin from "/Transfers/successlogin.png";
 const images = [
   driver_ready,
   driver_recently,
