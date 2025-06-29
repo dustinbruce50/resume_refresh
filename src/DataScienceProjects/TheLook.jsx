@@ -1,5 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import PdfViewer from "./PdfViewer.jsx";
+import { useLocation } from "react-router-dom";
 
 const TheLook = () => {
   const pdfFiles = [
@@ -235,10 +236,16 @@ const TheLook = () => {
     },
   ];
 
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const drawerRef = useRef(null);
+  const location = useLocation();
 
+  useEffect(() => {
+    if (location.hash == "#thelook") {
+      setIsOpen(true);
+    }
+  }, [location]);
   const toggleOpen = () => {
     setIsOpen(!isOpen);
     console.log("Drawer toggled to: ", !isOpen);

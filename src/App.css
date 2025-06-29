@@ -22,6 +22,9 @@
     --mainwhite: #ffffff;
     --mainblack: #000000;
   }
+  .empty {
+    visibility: hidden;
+  }
 
   #root {
     font-family: "Sora";
@@ -240,27 +243,39 @@
     background-color: #ffffff;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   }
-  #project-link {
+  #projects {
     background: black;
     color: white;
   }
   .project-link-container {
-    display: flex;
+    display: grid;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-top: 1rem;
     font-size: large;
   }
-  .project-link-container a {
+  .project-link-container .project-page-link {
     text-decoration: none;
     color: white;
     font-size: 130%;
     font-weight: 600;
-    padding: 0.5rem 1rem;
     border-radius: 0.25rem;
     background-color: black;
     text-decoration: underline;
+  }
+  .datascience-container {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .fullstack-container {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .project-link-container .project {
+    display: block;
+    color: aliceblue;
   }
   .ds-logo {
     max-width: 70%;
@@ -304,6 +319,29 @@
     visibility: hidden;
   }
   #thelook.card {
+    height: 100%;
+    overflow: hidden;
+  }
+  #ames.card {
+    height: 100%;
+    overflow: hidden;
+  }
+  #transfer.card {
+    height: 100%;
+    overflow: hidden;
+  }
+  #chat.card {
+    height: 100%;
+    overflow: hidden;
+  }
+  #wom.card {
+    height: 100%;
+    overflow: hidden;
+  }
+  #ames div {
+    margin: 0.5rem;
+  }
+  #taco.card {
     height: 100%;
     overflow: hidden;
   }
