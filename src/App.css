@@ -88,9 +88,10 @@
   }
   .card {
     margin-bottom: 2rem;
+    width: 90vw;
     display: flex;
     flex-direction: column;
-    width: 90%;
+    justify-content: center;
     height: auto;
     padding: 1rem;
     border: 1px solid #000000;
@@ -214,25 +215,15 @@
     background-color: rgba(0, 0, 0, 0.9);
     z-index: 1000;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #000000;
+    row-gap: 1rem;
   }
-  .pdfclose {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background-color: #ffffff;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-    color: black;
-    display: flex;
-  }
+
   .pdfnav {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
+    position: relative;
     background-color: #ffffff;
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
@@ -242,8 +233,8 @@
   }
   .pdfcontainer {
     overflow: auto;
-    max-height: 75vh;
-    max-width: 90vh;
+    max-height: 99vh;
+    max-width: 95vw;
     background-color: #ffffff;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   }
@@ -269,8 +260,49 @@
     background-color: black;
     text-decoration: underline;
   }
-  #datasciencehome img {
-    width: 50%;
-    height: 50%;
+  .ds-logo {
+    max-width: 70%;
+    display: flex;
+  }
+  .ds-header-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .card-drawer img.dropdown {
+    width: 30%;
+    height: auto;
+  }
+  .thelook-block-container {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .card-drawer {
+    display: flex;
+    flex-direction: column;
+  }
+  .heading-wrapper {
+    display: flex;
+    justify-content: space-between;
+    border: #000000 1px solid;
+    align-items: center;
+    cursor: pointer;
+  }
+  .heading-wrapper .dropdown-wrapper {
+  }
+  .heading-wrapper .projectheading {
+    margin: 0;
+  }
+  .heading-wrapper .empty {
+    visibility: hidden;
+  }
+  #thelook.card {
+    height: 100%;
+    overflow: hidden;
   }
 }

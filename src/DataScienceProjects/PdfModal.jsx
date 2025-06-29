@@ -33,17 +33,12 @@ const PdfModal = ({ file, onClose }) => {
   };
 
   return (
-    <div id='pdfmodal' >
-      <button
-        onClick={onClose}
-        className='pdfclose'
-      >
-        Close
-      </button>
+    <div id="pdfmodal">
       <nav className="pdfnav">
-        <button 
-        className='pdfprev'
-        onClick={() => setPageNumber((p) => Math.max(1, p - 1))}>
+        <button
+          className="pdfprev"
+          onClick={() => setPageNumber((p) => Math.max(1, p - 1))}
+        >
           Prev{" "}
         </button>
         <button
@@ -51,20 +46,22 @@ const PdfModal = ({ file, onClose }) => {
         >
           Next
         </button>
-        <span >
+        <span>
           Page {pageNumber} / {numPages || "?"}
         </span>
+
         <button onClick={() => setScale((s) => Math.max(0.5, s - 0.2))}>
           -
         </button>
         <button onClick={() => setScale((s) => Math.min(1, s + 0.2))}>+</button>
+        <span>
+          <button onClick={onClose} className="pdfclose">
+            Close
+          </button>
+        </span>
       </nav>
 
-      <div
-        className="pdfcontainer"
-        ref={scrollRef}
-        onWheel={handleWheel}
-      >
+      <div className="pdfcontainer" ref={scrollRef} onWheel={handleWheel}>
         <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
           <Page
             pageNumber={pageNumber}

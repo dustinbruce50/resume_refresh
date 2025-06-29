@@ -34,6 +34,7 @@ const PdfViewer = ({ pdfFiles }) => {
     <>
       {pdfFiles.map(({ id, file, analysis }) => (
         <div
+        className="thelook-block-container"
           key={id}
           onClick={() => openModal(file)}
           ref={containerRef}

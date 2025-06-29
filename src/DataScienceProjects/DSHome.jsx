@@ -5,8 +5,10 @@ import PdfViewer from "./PdfViewer.jsx";
 const DSHome = () => {
   return (
     <div className="home" id="datasciencehome">
-      <img src="src\assets\datascience.svg" alt="" />
+      <div className = 'ds-header-container'>
+      <img src="src\assets\datascience.svg" alt="" className="ds-logo" />
       <h1 className="heading">Data Science Projects</h1>
+      </div>
 
       <TheLook />
     </div>

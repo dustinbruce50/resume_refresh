@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import PdfViewer from "./PdfViewer.jsx";
 
 const TheLook = () => {
@@ -8,7 +8,7 @@ const TheLook = () => {
       file: "/thelookpdfs/TheLook Data Analysis-1_cropped.pdf",
       analysis: (
         <>
-          <div className="text-base space-y-8">
+          <div>
             <p>
               'As an entry point into this analysis, I wanted to see some of the
               trends of the user data. I coalesced all the user events in the
@@ -46,7 +46,7 @@ const TheLook = () => {
       file: "/thelookpdfs/TheLook Data Analysis-2.pdf",
       analysis: (
         <>
-          <div className="text-base space-y-8">
+          <div>
             <p>
               The next section of analysis I wanted to see what the gender and
               age demographics. The first immediate observation is that the
@@ -78,7 +78,7 @@ const TheLook = () => {
       file: "/thelookpdfs/TheLook Data Analysis-3.pdf",
       analysis: (
         <>
-          <div className="text-base space-y-8">
+          <div>
             <p>
               When it comes to product analysis, conclusions are difficult to
               draw from just the rankings. The top 10 brands are all well known
@@ -132,7 +132,7 @@ const TheLook = () => {
       file: "/thelookpdfs/TheLook Data Analysis-5.pdf",
       analysis: (
         <>
-          <div className="text-base space-y-8">
+          <div>
             <p>
               The next section of analysis looks at TheLook's processing time
               and order status over time. Very heavy instability in the early
@@ -160,7 +160,7 @@ const TheLook = () => {
       file: "/thelookpdfs/TheLook Data Analysis-6.pdf",
       analysis: (
         <>
-          <div className="text-base space-y-8">
+          <div>
             <p>
               For this data, we looked at session counts and the traffic source
               over time.
@@ -181,7 +181,7 @@ const TheLook = () => {
       file: "/thelookpdfs/TheLook Data Analysis-7.pdf",
       analysis: (
         <>
-          <div className="text-base space-y-8">
+          <div>
             <p>
               For the next section of data, we looked at product cost, revenue,
               and profit over time by aggregating daily sales and extracting
@@ -206,7 +206,7 @@ const TheLook = () => {
       file: "/thelookpdfs/TheLook Data Analysis-8.pdf",
       analysis: (
         <>
-          <div className="text-base space-y-8">
+          <div>
             <p>
               For the final analysis, we engineered an extensive cohort analysis
               grouped by the month of the users first sessions and the life of
@@ -235,19 +235,58 @@ const TheLook = () => {
     },
   ];
 
+  const [isOpen, setIsOpen] = useState(true);
+
+  const drawerRef = useRef(null);
+
+  const toggleOpen = () => {
+    setIsOpen(!isOpen);
+    console.log("Drawer toggled to: ", !isOpen);
+  };
+
   return (
-    <div className="card" id="thelook">
-      <h1 className="projectheading">The Look</h1>
-      <div>
-        This analysis was done using TheLook, a public synthetic dataset created
-        and published by Google. The data was hosted locally in a PostgreSQL
-        database, the queries were written in a DBT framework, and the analysis
-        and graphing were done in Power BI. While I wanted to be able to host
-        the live graphs with zoom, filtering, and better labeling, I did not
-        want to pay for the Premium User license. The data below is the static
-        PDF export from the Power BI report.
+    <div className="card-drawer">
+      <div className="heading-wrapper" onClick={toggleOpen}>
+        <div className="dropdown-wrapper">
+          <img
+            src="/dropdown.svg"
+            style={{
+              transition: "transform 0.3s",
+              transformOrigin: "center",
+              transform: isOpen ? "rotate(0deg)" : "rotate(180deg)",
+            }}
+            alt=""
+            className="dropdown"
+          />
+        </div>
+        <div className="projectheading data-science">The Look</div>
+        <div className="empty">
+          <img src="/dropdown.svg" alt="" className="dropdown" />
+        </div>
       </div>
-      <PdfViewer pdfFiles={pdfFiles} />
+      <div
+        className="card"
+        id="thelook"
+        ref={drawerRef}
+        style={{
+          maxHeight: isOpen ? `${drawerRef.current?.scrollHeight}vh` : "0px",
+
+          paddingBottom: isOpen ? "20px" : "0px",
+          paddingTop: isOpen ? "20px" : "0px",
+          transition: "max-height .5s",
+        }}
+      >
+        <div>
+          This analysis was done using TheLook, a public synthetic dataset
+          created and published by Google. The data was hosted locally in a
+          PostgreSQL database, the queries were written in a DBT framework, and
+          the analysis and graphing were done in Power BI. While I wanted to be
+          able to host the live graphs with zoom, filtering, and better
+          labeling, I did not want to pay for the Premium User license. The data
+          below is the static PDF export from the Power BI report.
+        </div>
+        <PdfViewer pdfFiles={pdfFiles} />
+      </div>
     </div>
   );
 };
