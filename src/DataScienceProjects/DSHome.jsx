@@ -10,9 +10,10 @@ const DSHome = () => {
         <img src="src\assets\datascience.svg" alt="" className="ds-logo" />
         <h1 className="heading">Data Science Projects</h1>
       </div>
-
-      <TheLook />
-      <Ames />
+      <div className="drawer-container">
+        <TheLook />
+        <Ames />
+      </div>
     </div>
   );
 };

@@ -24,7 +24,7 @@ const Chat = () => {
     console.log("Drawer toggled to: ", !isOpen);
   };
   return (
-    <div className="card-drawer">
+    <div className="card-drawer" id="chat">
       <div className="heading-wrapper" onClick={toggleOpen}>
         <div className="dropdown-wrapper">
           <img
@@ -45,7 +45,6 @@ const Chat = () => {
       </div>
       <div
         className="card"
-        id="chat"
         ref={drawerRef}
         style={{
           maxHeight: isOpen ? `${drawerRef.current?.scrollHeight}vh` : "0px",
@@ -54,7 +53,7 @@ const Chat = () => {
           transition: "max-height .5s",
         }}
       >
-        <div className="projectheading">Chat App</div>
+        <div className="projectheading"></div>
         <div>
           This application I built because it sounded like a refreshing break
           from other front end focused projects. This is a chat application

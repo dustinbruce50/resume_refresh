@@ -28,7 +28,7 @@ const Taco = () => {
   };
 
   return (
-    <div className="card-drawer">
+    <div className="card-drawer" id="taco">
       <div className="heading-wrapper" onClick={toggleOpen}>
         <div className="dropdown-wrapper">
           <img
@@ -49,7 +49,6 @@ const Taco = () => {
       </div>
       <div
         className="card"
-        id="taco"
         ref={drawerRef}
         style={{
           maxHeight: isOpen ? `${drawerRef.current?.scrollHeight}vh` : "0px",

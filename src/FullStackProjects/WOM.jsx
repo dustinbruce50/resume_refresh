@@ -14,7 +14,7 @@ const WOM = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const drawerRef = useRef(null);
-const location = useLocation();
+  const location = useLocation();
 
   useEffect(() => {
     if (location.hash == "#wom") {
@@ -27,7 +27,7 @@ const location = useLocation();
   };
 
   return (
-    <div className="card-drawer">
+    <div className="card-drawer" id="wom">
       <div className="heading-wrapper" onClick={toggleOpen}>
         <div className="dropdown-wrapper">
           <img
@@ -48,7 +48,6 @@ const location = useLocation();
       </div>
       <div
         className="card"
-        id="wom"
         ref={drawerRef}
         style={{
           maxHeight: isOpen ? `${drawerRef.current?.scrollHeight}vh` : "0px",

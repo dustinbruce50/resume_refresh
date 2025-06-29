@@ -8,10 +8,12 @@ const FSHome = () => {
   return (
     <div className="home">
       <h1 className="heading">Full Stack Projects</h1>
+      <div className="drawer-container">
       <Transfer />
       <Chat />
       <WOM />
       <Taco />
+      </div>
     </div>
   )
 }
