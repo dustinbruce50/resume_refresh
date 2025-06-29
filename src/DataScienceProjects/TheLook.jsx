@@ -15,7 +15,7 @@ const TheLook = () => {
               Events table into a unique "User Identifier" that was either,
               their real user ID, or the IP address associated with the event.
               The limitations of this coalesce include the double counting of
-              individualds who accessed the site from different devices,
+              individuals who accessed the site from different devices,
               locations, or were using VPNs or other means of IP address
               rotation.',
             </p>
@@ -60,7 +60,7 @@ const TheLook = () => {
               Secondly, the age demographics are equally surprising. The most
               represented age group are individuals 50 years and older. It's
               important to note that most age data comes From users who have a
-              "User ID", and as such are registered memberes. While this is
+              "User ID", and as such are registered members. While this is
               limitation, it at least shows that the largest demographic most
               likely to register are users 50 years of age and older.
             </p>
@@ -106,7 +106,7 @@ const TheLook = () => {
               When looking at the highest and lowest product cost %, we can see
               one factor that likely effects global product cost in relation to
               demographics is the high cost % of Suits, in the mens category. At
-              60% product cost, this is the second mostt costly category, beat
+              60% product cost, this is the second most costly category, beat
               out only by clothing sets, a category which didn't make the top 7
               categories in terms of profit. Jeans similarly ranked as one of
               the most cost heavy categories, even while being the sales leader
@@ -115,12 +115,12 @@ const TheLook = () => {
             <p>
               In terms of the lowest product cost %, Suits and Sports Coats, and
               Blazers and Jackets remain untapped markets to counter the high
-              cost % of the Mens Suits category. A possible upsale strategy
+              cost % of the Mens Suits category. A possible upsell strategy
               exists in pre and post sale deals on adding a blazer or jacket to
               a jeans purchase, coupled with some of the top brand specific
               marketing with brands like like Calvin Klein, who offers both
               Jeans and Suits/Blazers. For female customers, the lowest cost %
-              upsell opportunity is Socks and Hosiery, which exists as an upsale
+              upsell opportunity is Socks and Hosiery, which exists as an upsell
               opportunity for almost any clothing purchase.
             </p>
           </div>
@@ -190,12 +190,12 @@ const TheLook = () => {
             </p>
             <p>
               It doesn't appear that the overall product cost changed
-              siginificantly over time, indicating a strong liklihood that
+              significantly over time, indicating a strong likelihood that
               category sales didn't change significantly. The running product
               cost % only varied between ~48% and 48.5% between startup in 2019
               and significant growth through 2022, representing a 150 variance
-              in profit at $10k in sales/day. When sales balooned, the product
-              cost stablized around 48.2%.
+              in profit at $10k in sales/day. When sales ballooned, the product
+              cost stabilized around 48.2%.
             </p>
           </div>
         </>
@@ -217,14 +217,14 @@ const TheLook = () => {
               One interesting observation from the cohort analysis is that,
               especially in the early days of TheLook, users were bipolar in
               their retentions rates. The 2 largest categories in the first year
-              of the data were one-off users, and users whos lifespan extended
-              1-2 years. A middling market of useres who's lifespan extended 3-9
+              of the data were one-off users, and users who's lifespan extended
+              1-2 years. A middling market of users who's lifespan extended 3-9
               months didn't begin forming until well into 2021. This was even
               more apparent in the more granular data, when breaking down
               cohorts into percentiles, the average of the lower 90% of the user
               lifespans was rounded up to 0 days. However, the upper 10% has
               lifespans that were through most of TheLooks existence. The line
-              representign the average lifespan of each cohort is almost
+              representing the average lifespan of each cohort is almost
               misleading in this regard, as the vast majority of users through
               most of TheLooks history were single time users. However, those
               that did return did so frequently, and for a long period of time.

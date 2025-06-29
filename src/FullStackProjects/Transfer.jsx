@@ -30,7 +30,7 @@ const Transfer = () => {
         daily basis, my job requires me to communicate with up to 8 other units
         and coordinate the transfer of food and supplies. This app is a solution
         to that problem, allowing me to send a request for food that will
-        notifiy all other operators of my need.
+        notify all other operators of my need.
       </div>
       <div className="carousel-container">
         <Carousel images={images} id="carousel" />

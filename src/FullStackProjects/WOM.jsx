@@ -38,7 +38,9 @@ const WOM = () => {
         passwords with BCrypt.NET, and session tokens for authenticated user
         access.
       </div>
-      <Carousel images={images} id="carousel" />
+      <div className="carousel-container">
+        <Carousel images={images} id="carousel" />
+      </div>
     </div>
   );
 };
